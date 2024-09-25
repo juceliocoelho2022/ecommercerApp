@@ -7,15 +7,20 @@ public class PopularDomain {
     private double score;
     private  int numberInChart;
     private  double price;
+    private  String description;
 
-    public PopularDomain(String title, String picUrl, int review, double score, double price) {
+    public PopularDomain(String title, String picUrl, int review, double score, double price, String description) {
         this.title = title;
         this.picUrl = picUrl;
         this.review = review;
         this.score = score;
         this.price = price;
+        this.description= description;
     }
 
+    public  String getDescription(){
+        return  description;
+    }
     public String getPicUrl() {
         return picUrl;
     }
